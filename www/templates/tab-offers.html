@@ -1,6 +1,19 @@
-<ion-view view-title="Offers">
-  <ion-content class="padding">
-      <ul>
-          <li ng-repeat="offer in offers">{{offer.Price}}</li>
-      </ul>
+<ion-view view-title="{{offers.length}} оферти" name="offerinfo">
+    <ion-content>
+
+        <ion-list>
+
+            <ion-item  ng-repeat="offer in offers track by $index" class="item item-thumbnail-left" href="#/tab/offerinfo/{{offer.ListingID}}">
+                <img ng-src="http://oferti.biz/re_thumbs/{{offer.image[0]}}">
+                <h2>{{offer.ShortDesc}}</h2>
+                <h2>{{offer.address}}</h2>
+                <p>{{offer.rooms}} стаи, {{offer.bathrooms}} бани</p>
+                <p>{{offer.Price}} {{offer.currency}}</p>
+            </ion-item>
+
+
+
+        </ion-list>
+
+    </ion-content>
 </ion-view>

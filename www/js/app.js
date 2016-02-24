@@ -59,7 +59,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('tab.offerinfo', {
+      url: '/offerinfo/:listingId',
+      views: {
+        'tab-offers': {
+          controller: 'OfferinfoCtrl',
+          templateUrl: 'templates/offerinfo.html'
+        }
+      }
+    }) 
   .state('tab.chats', {
       url: '/chats',
       views: {

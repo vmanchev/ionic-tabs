@@ -1,0 +1,36 @@
+<ion-view view-title="{{offer.address}}">
+    <ion-content>
+
+        <div class="list card">
+
+            <div class="item item-divider">
+                <h2>{{offer.Price}} {{offer.currency}}</h2>
+                <p>{{offer.rooms}} стаи, {{offer.bathrooms}} бани</p>
+            </div>
+
+            <div class="item item-body">
+
+
+                <ion-slide-box on-slide-changed="slideHasChanged($index)">
+                    <ion-slide ng-repeat="img in offer.image">
+                        <div class="box">
+                            <img class="full-image" ng-src="http://oferti.biz/image3.html?area=offer_big&f={{img}}" />
+                        </div>
+                    </ion-slide>
+                </ion-slide-box>
+
+
+                <p>
+                    {{offer.FullDesc}}
+                </p>
+                <p>
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                </p>
+            </div>
+
+        </div>      
+
+
+    </ion-content>
+</ion-view>
