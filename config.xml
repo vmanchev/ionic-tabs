@@ -8,6 +8,7 @@
       Your Name Here
     </author>
   <plugin name="cordova-plugin-whitelist" spec="~1.2.1" source="npm"/>
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://*/*"/>
