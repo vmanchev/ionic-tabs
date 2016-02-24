@@ -1,5 +1,18 @@
 angular.module('starter.services', [])
-
+.factory('Offers', function($http){
+    return {
+        latest: function(){
+            return $http.get('http://www.prodio.bg/mobile.json').then(
+                function(result){
+                    return result.data;
+                },
+                function(err){
+                    return JSON.stringify(err);
+                }
+            );
+        }
+    }
+})
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

@@ -17,6 +17,13 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('OffersCtrl', function($scope, Offers) {
+    
+  Offers.latest().then(function(data){
+      $scope.offers = data;
+  });
+})
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
