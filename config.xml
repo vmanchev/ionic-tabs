@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionictabs957590" version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Ionic Tabs 8</name>
+<widget id="com.ionicframework.ionictabs957590" version="0.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ionic Tabs 9</name>
   <description>
-        An Ionic Framework and Cordova project. 8
+        An Ionic Framework and Cordova project. 9
     </description>
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
@@ -19,6 +19,7 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
+  <preference name="ShowSplashScreen" value="true" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="5000"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
