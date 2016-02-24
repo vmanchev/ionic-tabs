@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionictabs957590" version="0.0.4" xmlns="http://www.w4.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Ionic Tabs 4</name>
+<widget id="com.ionicframework.ionictabs957590" version="0.0.5" xmlns="http://www.w5.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ionic Tabs 5</name>
   <description>
-        An Ionic Framework and Cordova project. 4
+        An Ionic Framework and Cordova project. 5
     </description>
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
