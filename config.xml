@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionictabs957590" version="0.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Ionic Tabs 10</name>
+<widget id="com.ionicframework.ionictabs957590" version="0.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ionic Tabs 11</name>
   <description>
-        An Ionic Framework and Cordova project. 10
+        An Ionic Framework and Cordova project. 11
     </description>
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
@@ -25,6 +25,7 @@
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="SplashReloadOnOrientationChange" value="true"/>
   <preference name="SplashShowOnlyFirstTime" value="false" />
+  <preference name="FadeSplashScreen" value="false"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
