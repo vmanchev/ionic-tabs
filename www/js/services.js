@@ -4,9 +4,11 @@ angular.module('starter.services', [])
         latest: function(){
             return $http.get('http://www.prodio.bg/mobile.json').then(
                 function(result){
+                    alert(JSON.stringify(result))
                     return result.data;
                 },
                 function(err){
+                    alert(JSON.stringify(err))
                     return JSON.stringify(err);
                 }
             );
