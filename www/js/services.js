@@ -1,17 +1,22 @@
 angular.module('starter.services', [])
-        .factory('Offers', function ($http) {
+        .factory('Offers', function ($http, $ionicLoading) {
             
             var offers = [];
             
             return {
                 latest: function () {
+
+                    $ionicLoading.show();
+                    
                     return $http.get('http://www.prodio.bg/mobile.json').then(
                             function (result) {
                                 offers = result.data;
+                                $ionicLoading.hide();
                                 return result.data;
                             },
                             function (err) {
                                 alert(JSON.stringify(err))
+                                $ionicLoading.hide();
                                 return JSON.stringify(err);
                             }
                     );
