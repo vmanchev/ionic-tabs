@@ -26,6 +26,7 @@
   <preference name="SplashReloadOnOrientationChange" value="true"/>
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="FadeSplashScreen" value="false"/>
+  <preference name="ShowSplashScreenSpinner" value="false" />  
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
