@@ -21,6 +21,8 @@ angular.module('starter.controllers', [])
     
   Offers.latest().then(function(data){
       $scope.offers = data;
+  }, function(err){
+      alert(err)
   });
 })
 
